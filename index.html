@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Giggles n Kurls | Quick Booking Nail Studio Midrand</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF5F5F", // Vibrant Coral
+                        "accent": "#007AFF", // Electric Blue
+                        "charcoal": "#1A1A1A",
+                        "slate-custom": "#F8FAFC",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body { @apply font-sans bg-white text-charcoal; }
+        }
+        .booking-widget-bg {
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+        }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary .expand-icon { transform: rotate(180deg); }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+<div class="relative flex min-h-screen flex-col">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur-md">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+<div class="flex items-center gap-2">
+<div class="flex h-9 w-9 items-center justify-center rounded bg-charcoal text-white">
+<span class="material-symbols-outlined text-xl">bolt</span>
+</div>
+<h1 class="text-lg font-bold tracking-tight uppercase">Giggles n Kurls</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-10">
+<a class="text-xs font-bold uppercase tracking-wider hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-xs font-bold uppercase tracking-wider hover:text-primary transition-colors" href="#pricing">Rates</a>
+<a class="text-xs font-bold uppercase tracking-wider hover:text-primary transition-colors" href="#location">Location</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="hidden sm:block text-xs font-medium text-slate-500">Mon-Sat: 09:00 - 18:00</span>
+<a class="rounded bg-primary px-5 py-2 text-xs font-bold uppercase tracking-wider text-white hover:bg-opacity-90 transition-all" href="#book">
+                        Book Now
+                    </a>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative bg-charcoal text-white overflow-hidden" id="book">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYSiG7lcFzBPb8Zv_PFv3nYGEhRq-BICAFhM7Ni_geVx8lHFx9GEBdnh7BEpBS8zD9a9FJf5eU7tCGjavVq_23uf1kyC5cdUZ0IPHDD24V94WjiIpL2S4RK24H4F0U6Vx6j-36PeGA4HR6fozNv4ynFHvTAhHtuAzmPVd5QketKU8sBWBKKzuY-ANJ6DKjQ7nxNZG1vYqCtCe-Bw0yH88AF4lGBXJdVDEfYcLxIqG9sXL01agQLy1DvyStUh_sUPuTL_3fE69FzKE');"></div>
+</div>
+<div class="mx-auto max-w-7xl px-6 py-12 lg:py-24 relative z-10">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="max-w-xl">
+<span class="inline-block text-primary font-bold text-xs uppercase tracking-[0.2em] mb-4">Midrand’s Efficiency Leader</span>
+<h2 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                                Professional Care, <span class="text-primary">Record Time.</span>
+</h2>
+<p class="text-lg text-slate-300 leading-relaxed mb-8">
+                                Experience the Giggles n Kurls vibe – high-energy style designed for the modern professional. Premium results, zero wasted time.
+                            </p>
+<div class="flex flex-wrap gap-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">timer</span>
+<span class="text-sm font-semibold">45min Express Sets</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent">event_available</span>
+<span class="text-sm font-semibold">Instant Confirmation</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-2xl p-1 text-charcoal">
+<div class="booking-widget-bg rounded-lg p-6 lg:p-8">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-xl font-extrabold tracking-tight">Express Booking</h3>
+<span class="text-xs font-bold text-primary uppercase bg-primary/10 px-2 py-1 rounded">Live Availability</span>
+</div>
+<div class="space-y-4">
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">Select Service</label>
+<select class="w-full rounded border-slate-200 text-sm focus:ring-accent focus:border-accent">
+<option>Acrylic + Gel Tips (90min) - ZAR 400</option>
+<option>Gel Toenails (45min) - ZAR 250</option>
+<option>Rubber Base Overlay (60min) - ZAR 320</option>
+<option>Express Manicure (30min) - ZAR 180</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">Date</label>
+<input class="w-full rounded border-slate-200 text-sm focus:ring-accent focus:border-accent" type="date"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">Time Slot</label>
+<select class="w-full rounded border-slate-200 text-sm focus:ring-accent focus:border-accent">
+<option>09:00 AM</option>
+<option>10:30 AM</option>
+<option>12:00 PM</option>
+<option>02:30 PM</option>
+<option>04:00 PM</option>
+</select>
+</div>
+</div>
+<button class="w-full bg-accent text-white py-4 rounded font-extrabold uppercase tracking-widest text-xs hover:bg-blue-600 transition-colors shadow-lg shadow-accent/20">
+                                        Confirm Booking Slot
+                                    </button>
+<p class="text-center text-[10px] text-slate-400 font-medium">Cancel or reschedule up to 2 hours before.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-slate-50" id="services">
+<div class="mx-auto max-w-4xl px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<h2 class="text-3xl font-black uppercase tracking-tight">Services Menu</h2>
+<p class="text-slate-500 font-medium mt-1">High-performance beauty solutions.</p>
+</div>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 text-xs font-bold text-slate-400">
+<span class="size-2 rounded-full bg-slate-300"></span> Scannable View
+                            </div>
+</div>
+</div>
+<div class="space-y-4">
+<details class="group bg-white rounded-lg border border-slate-200 overflow-hidden" open="">
+<summary class="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50 transition-colors">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded bg-slate-100 text-charcoal group-open:bg-primary group-open:text-white transition-colors">
+<span class="material-symbols-outlined">back_hand</span>
+</div>
+<div>
+<h3 class="text-lg font-bold">Essential Care</h3>
+<p class="text-xs text-slate-500 font-medium">Daily maintenance &amp; hydration</p>
+</div>
+</div>
+<span class="material-symbols-outlined expand-icon transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 pt-2 border-t border-slate-100">
+<div class="grid sm:grid-cols-2 gap-6">
+<div class="flex items-center justify-between border-b border-slate-50 py-3">
+<span class="text-sm font-medium">Luxury Manicures</span>
+<span class="text-sm font-bold">ZAR 220</span>
+</div>
+<div class="flex items-center justify-between border-b border-slate-50 py-3">
+<span class="text-sm font-medium">Spa Pedicures</span>
+<span class="text-sm font-bold">ZAR 300</span>
+</div>
+<div class="flex items-center justify-between border-b border-slate-50 py-3">
+<span class="text-sm font-medium">Paraffin Treatment</span>
+<span class="text-sm font-bold">ZAR 150</span>
+</div>
+</div>
+</div>
+</details>
+<details class="group bg-white rounded-lg border border-slate-200 overflow-hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50 transition-colors">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded bg-slate-100 text-charcoal group-open:bg-primary group-open:text-white transition-colors">
+<span class="material-symbols-outlined">brush</span>
+</div>
+<div>
+<h3 class="text-lg font-bold">Trendsetting Sets</h3>
+<p class="text-xs text-slate-500 font-medium">Durability &amp; high-impact style</p>
+</div>
+</div>
+<span class="material-symbols-outlined expand-icon transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 pt-2 border-t border-slate-100">
+<div class="grid sm:grid-cols-2 gap-6">
+<div class="flex items-center justify-between border-b border-slate-50 py-3">
+<span class="text-sm font-medium">Custom Acrylic</span>
+<span class="text-sm font-bold">ZAR 400+</span>
+</div>
+<div class="flex items-center justify-between border-b border-slate-50 py-3">
+<span class="text-sm font-medium">Hard Gel Sets</span>
+<span class="text-sm font-bold">ZAR 450+</span>
+</div>
+<div class="flex items-center justify-between border-b border-slate-50 py-3">
+<span class="text-sm font-medium">Rubber Base</span>
+<span class="text-sm font-bold">ZAR 320</span>
+</div>
+</div>
+</div>
+</details>
+<details class="group bg-white rounded-lg border border-slate-200 overflow-hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50 transition-colors">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded bg-slate-100 text-charcoal group-open:bg-primary group-open:text-white transition-colors">
+<span class="material-symbols-outlined">face</span>
+</div>
+<div>
+<h3 class="text-lg font-bold">Beyond Nails</h3>
+<p class="text-xs text-slate-500 font-medium">Facial care &amp; lash extensions</p>
+</div>
+</div>
+<span class="material-symbols-outlined expand-icon transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 pt-2 border-t border-slate-100">
+<div class="grid sm:grid-cols-2 gap-6">
+<div class="flex items-center justify-between border-b border-slate-50 py-3">
+<span class="text-sm font-medium">Full Lash Set</span>
+<span class="text-sm font-bold">ZAR 550</span>
+</div>
+<div class="flex items-center justify-between border-b border-slate-50 py-3">
+<span class="text-sm font-medium">Glow-Up Facial</span>
+<span class="text-sm font-bold">ZAR 480</span>
+</div>
+<div class="flex items-center justify-between border-b border-slate-50 py-3">
+<span class="text-sm font-medium">Precision Waxing</span>
+<span class="text-sm font-bold">ZAR 120+</span>
+</div>
+</div>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section class="py-16 border-b border-slate-100" id="artists">
+<div class="mx-auto max-w-7xl px-6">
+<div class="flex items-center gap-8 overflow-x-auto pb-4 scrollbar-hide">
+<div class="shrink-0 flex items-center gap-4 bg-slate-50 p-4 rounded-lg">
+<div class="size-16 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all">
+<img alt="Linda" class="object-cover size-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5R9tBhoAWj-FOo7Q9j8UYP14Iuf_P04zdvtoykHv9Sl3IheAmzt4rGwD4PRU8GzG_v3VglOPnSLdiv_nhgLshxe7sPYFp6-bjy_rhTUNqpvuYRRn-Rm5WZf1FTBdf8RsHpcpiqGPFq2CE53EsO3FnbfWXoEmlEnKxIPpCRbidbVYRyZDp4elyrT0_oKZ8ZP_6r6ypWxwWeYCNyNdgx4Y50md2Q6f5mIV9JwyM_QNInAa1ruGQ8HQ96qMSoizIoQFtpAhPxJxyzeQ"/>
+</div>
+<div>
+<h4 class="text-sm font-black uppercase">Linda</h4>
+<p class="text-[10px] font-bold text-primary uppercase">Acrylic Specialist</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-4 bg-slate-50 p-4 rounded-lg">
+<div class="size-16 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all">
+<img alt="Mbali" class="object-cover size-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvfmHGlz292xvRDk97RHyw1Mk-aL8VJ_zvIGOElY_X5WWdQUORryxZiL6-L8Hztv94MqtLSlR1nQX9P3FFltkMToqegWccknZbU-XSuDpEtwjpoJNaiC4WbVm_rVdroTg4HmoagWSLu8ZeVkQ9MSIB7qXmIhChNP1bWjJwIiqBMhzXhxR70uzU3Y23bjTKUHrTWrzske5P7dQkCw5ljwZ5TJF6PpbckKtYEfdMucmuinGopOrxxEv1si7SDwr89H9eaDsU74ak71o"/>
+</div>
+<div>
+<h4 class="text-sm font-black uppercase">Mbali</h4>
+<p class="text-[10px] font-bold text-primary uppercase">Gel Art Pro</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-4 bg-slate-50 p-4 rounded-lg">
+<div class="size-16 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all">
+<img alt="Sarah" class="object-cover size-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9vaizHiG3oUhGjbvP_yDX05GyoSyQq0r6TPL3NuVF9QFKT2G54AqulMpAqHVhJPR7w2M1Bf96wvxNUGd3B4vuDE4Q6aSv75iouMZ-EeecQAH1009uiH7cZDDDuIIKFpN59FC7l_FWdKG8VrT-MrA27w9X0sRjSxeRuczJg08zzdEXF1l2MRGiJR7yBNEWUAwYUFp3bFIe5wZH6NZf-CxqKXwCd5IbB62DITbWNLyNEuA0aehnXmZqnoQwbrL3C20m6RDPiQqlFlI"/>
+</div>
+<div>
+<h4 class="text-sm font-black uppercase">Sarah</h4>
+<p class="text-[10px] font-bold text-primary uppercase">Lash Tech</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20" id="location">
+<div class="mx-auto max-w-7xl px-6">
+<div class="grid lg:grid-cols-2 gap-12 items-stretch">
+<div class="flex flex-col justify-center">
+<h2 class="text-3xl font-black uppercase mb-8">Visit Us</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-accent">location_on</span>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">Address</h4>
+<p class="font-bold">123 Garden Plaza, Halfway Gardens, Midrand</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-accent">schedule</span>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">Business Hours</h4>
+<p class="font-bold">Monday – Saturday: 09:00 – 18:00</p>
+<p class="text-slate-400 font-medium">Sunday: Closed</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-accent">phone_iphone</span>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">Contact</h4>
+<p class="font-bold">+27 11 555 0123</p>
+</div>
+</div>
+</div>
+<div class="mt-12 flex gap-4">
+<a class="flex-1 text-center bg-charcoal text-white py-4 text-xs font-bold uppercase tracking-widest rounded hover:bg-black transition-colors" href="#">Get Directions</a>
+<a class="flex-1 text-center border border-charcoal py-4 text-xs font-bold uppercase tracking-widest rounded hover:bg-slate-50 transition-colors" href="tel:+27115550123">Call Studio</a>
+</div>
+</div>
+<div class="h-[400px] lg:h-auto rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-xl">
+<img alt="Map of Midrand Location" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1GZIjn-Y8Tfy6kHEeSIr-Zh6UUUpuS8_nkKwDHt-_McG5Zzg0DlmLas7-5IMNE-3iyRUrWCAnNz0J7cPXQ195Jrl_jg2ACXU1XH4-TvlarJD1Uu9uXuqxQZAdhPJ4rWdwMOfZG6NuGnbO79UF8cMZbq_CCsSy1zBv_frZxXInXfXmJQMmp6fi131xLxeoVOqOSs_AJTqh9-NRgJjdck1pPr7TVwF7vW4jOY0Mqcdf7zDdtIoIYBx2U_xgXPDyNyDTlE2biFuQ8w0"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white border-t border-slate-100 py-12 px-6">
+<div class="mx-auto max-w-7xl">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-2">
+<div class="flex h-8 w-8 items-center justify-center rounded bg-charcoal text-white">
+<span class="material-symbols-outlined text-lg">bolt</span>
+</div>
+<h2 class="text-sm font-black tracking-tight uppercase">Giggles n Kurls</h2>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">thumb_up</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">© 2024 Giggles n Kurls. Efficiency First.</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
